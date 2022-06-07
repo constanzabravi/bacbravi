@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BAC LAW & DEVELOPERS</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="icon" href="assets/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+</head>
+<body class="grid-container">
+  <!-- inicio de header -->
+  <header>
+    <a href="#"><img src="assets/baclogo.jpg"></a>
+    <!-- inicio de navbar -->
+    <nav>
+      <ul>
+        <li><a href="#">INICIO</li></a>
+        <li><a href="pages/agenda-tu-entrevista.html">AGENDÁ TU ENTREVISTA</a></li>
+        <li><a href="#formulario">ORIENTACIÓN SIN CARGO</a></li>
+        <li><a href="pages/tienda-legal.html">TIENDA LEGAL</a></li>
+        <li><a href="pages/capacitate.html">CAPACITATE</a></li>
+        <li><a href="pages/trabaja-con-nosotros.html">TRABAJÁ CON NOSOTROS</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- contenido -->
+  <main>
+    <section class="hero">
+      <p> La justicia, al alcance de tu mano.</p>
+    </section>
+    <section>
+      <p class="claseTitulo">¿QUIÉNES SOMOS?</p>
+      <div class="divSeccion">
+        <p> Somos un equipo de abogados y de desarrolladores web que ofrecemos un servicio
+          novedoso y eficiente, con la intención de resignificar el servicio jurídico al alcance de tu mano </p>
+        <div class="imgQuienesSomos"><img src="assets/quienessomos.jpg" alt="alcancejusticia"></div>
+      </div>
+    </section>
+    <section class="fondoSeccion">
+      <p class="claseTitulo">NUESTROS SERVICIOS</p>
+      <h2 class="claseTitulo">JURÍDICOS</h2>
+      <ul class="servicios">
+        <li>
+          <div class="servicio">
+            <div class="servicio-title">CONTRATOS</div>
+            <div class="servicio-img"><img src="assets/contratos.png" alt="contratos"></div>
+          </div>
+        </li>
+        <li>
+          <div class="servicio">
+            <div class="servicio-title">SOCIEDADES</div>
+            <div class="servicio-img"><img src="assets/sociedades.png" alt="sociedades"></div>
+          </div>
+        </li>
+        <li>
+          <div class="servicio">
+            <div class="servicio-title">DERECHO PENAL</div>
+            <div class="servicio-img"><img src="assets/penal.png" alt="penal"></div>
+          </div>
+        </li>
+        <li>
+          <div class="servicio">
+            <div class="servicio-title">FAMILIA</div>
+            <div class="servicio-img"><img src="assets/familia.png" alt="familia"></div>
+          </div>
+        </li>
+        <li>
+          <div class="servicio">
+            <div class="servicio-title">LEGAL TECH - START-UPS</div>
+            <div class="servicio-img"><img src="assets/legaltech.png" alt="legaltech"></div>
+          </div>
+        </li>
+        <li>
+          <div class="servicio">
+            <div class="servicio-title">LABORAL</div>
+            <div class="servicio-img"><img src="assets/laboral.png" alt="laboral"></div>
+          </div>
+        </li>
+        <li>
+          <div class="servicio">
+            <div class="servicio-title">MEDICINA LEGAL</div>
+            <div class="servicio-img"><img src="assets/medicinalegal.png" alt="medicinalegal"></div>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section class="fondoSeccion">
+      <h2 class="claseTitulo">DESARROLLO WEB</h2>
+      <ul class="servicios">
+        <li>
+          <div class="servicio">
+            <div class="servicio-title">ARMÁ TU PÁGINA WEB</div>
+            <div class="servicio-img"><img src="assets/armatupagina.png" alt="arma tu pagina web"></div>
+          </div>
+        </li>
+        <li>
+          <div class="servicio">
+            <div class="servicio-title">ARMÁ TU EMPRENDIMIENTO VIRTUAL</div>
+            <div class="servicio-img"><img src="assets/emprendimientovirtual.png" alt="arma tu emprendimiento"></div>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section class="cartas">
+      <h3 class="claseTitulo">NUESTRO TRABAJO SE DESTACA POR</h3>
+      <p>- EFICIENCIA -</p>
+      <p>- INNOVACIÓN -</p>
+      <p>- CELERIDAD -</p>
+    </section>
+    <section class="fondoSeccion">
+      <p class="claseTitulo">ORIENTACIÓN SIN CARGO</p>
+      <form action="" method="get" enctype="text/plain" id="formulario">
+        <fieldset>
+          <legend>Información Personal</legend>
+          <div>
+            <label for="userName">Nombre y Apellido:</label><br>
+            <input type="text" id="userName" name="userName" required placeholder="Su nombre completo">
+          </div>
+          <div>
+            <label for="servicio">Servicio de su interés:</label><br>
+            <select name="servicio">
+              <option value="juridico">Jurídico</option>
+              <option value="paginaWeb">Página Web</option>
+              <option value="ambos">Ambos</option>
+            </select>
+          </div>
+          <div>
+            <label for="userCity">Localidad:</label><br>
+            <input type="text" id="userCity" name="userCity" required placeholder="Su localidad">
+          </div>
+          <div>
+            <label for="userNmb">Celular:</label><br>
+            <input type="text" id="userNmb" name="userNmb" required
+              placeholder="Su celular con la característica de su localidad">
+          </div>
+          <div>
+            <label for="userEmail">Email:</label><br>
+            <input type="email" id="userEmail" name="userEmail" required placeholder="Su correo electrónico">
+          </div>
+          <div>
+            <label for="userConsulta">Consulta:</label><br>
+            <textarea name="userConsulta" id="userConsulta" rows="4" required
+              placeholder="Escriba su consulta"></textarea>
+          </div>
+          <div>
+            Acepta términos y condiciones
+            <input type="checkbox" name="acepta" value="1" required />
+          </div>
+          <div>
+            <input class="buttonClass" type="submit" value="Enviar">
+          </div>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+  <!-- inicio de footer -->
+  <footer>
+    <h3>¡Seguinos en nuestras redes sociales y enterate de todas las novedades!</h3>
+  </footer>
+</body>
+
+</html>
