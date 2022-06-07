@@ -79,9 +79,6 @@ main {
     background-color: wheat;
 }
 
-main section img:hover {
-    transform: scaleX(-1);
-}
 
 section {
     padding: 4em;
@@ -417,6 +414,38 @@ footer {
     border-radius: 5%;
 }
 
+/* Animaciones */
+.animacionP {
+    animation: 3s infinite alternate slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-let: 100%;
+        width: 100%
+    }
+
+    to {
+        margin-left: 0%;
+        width: 50%;
+    }
+}
+
+.animacionAgranda:hover {
+    transform: scale(1.1);
+}
+
+.animacionSalto {
+    float: left;
+    -webkit-transition: margin 0.5s ease-out;
+    -moz-transition: margin 0.5s ease-out;
+    -o-transition: margin 0.5s ease-out;
+    transition: all 0.5s ease;
+}
+
+.animacionSalto:hover {
+    margin-top: 10px;
+}
 
 /* FINAL TRABAJA CON NOSOTROS PAGE */
 
