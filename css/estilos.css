@@ -18,22 +18,23 @@ html {
         "footer footer footer footer";
     color: black;
 }
+
 header {
     grid-area: header;
     background-color: white;
-    margin-bottom: 2px;
 }
+
 .imgheader {
     margin-right: 200px;
-    }
+}
 
 .navhover:hover {
-    background-color: wheat;
+    background-color: #FFCBA4;
 }
 
 main {
     grid-area: main;
-    background-color: wheat;
+    background-color: #EBEBEB;
 }
 
 
@@ -41,64 +42,7 @@ section {
     padding: 4em;
 }
 
-form {
-    padding: 2rem;
-    border-radius: 8px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    justify-content: center;
-}
 
-form input {
-    width: 400px;
-    padding: 0.8rem;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    margin-bottom: 10px;
-}
-
-#userConsulta {
-    width: 400px;
-    padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    margin-bottom: 10px;
-}
-
-fieldset {
-    padding: 1rem;
-
-}
-
-footer {
-    grid-area: footer;
-    background-color: wheat;
-    text-align: center;
-    font-size: 1rem;
-    border-top: darkgrey 1px solid;
-    padding: 10px 10px;
-    height: 5vh;
-}
-
-.hero {
-    height: 80vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-image: url("../assets/palacioj.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.hero>p {
-    font-size: 2.5rem;
-    justify-self: center;
-    align-self: end;
-    color: white;
-    font-family: Lato, sans-serif;
-}
 
 .claseTitulo {
     font-size: 1.8rem;
@@ -125,8 +69,8 @@ footer {
 
 
 .fondoSeccion {
-    background-color: #4c4444;
-    color: white
+    background-color: #8A8A8A;
+    color: black;
 }
 
 .cartas {
@@ -162,7 +106,22 @@ footer {
     background: linear-gradient(#ccc2a6, rgba(223, 208, 164, 1));
 }
 
+footer {
+    grid-area: footer;
+}
 /* utils estilos */
+hr {
+    height: 10px;
+    width: 30%;
+    background-color: black;
+  }
+.hr1 {
+    height: 10px;
+    width: 30%;
+    margin-left: 70%;
+    margin-right: 0%;
+    background-color: black;
+  }
 .textoCentrado {
     text-align: center;
 }
@@ -373,18 +332,18 @@ footer {
 
 /* Animaciones */
 .animacionP {
-    animation: 3s infinite alternate slidein;
+    animation: 5s infinite alternate slidein;
 }
 
 @keyframes slidein {
     from {
-        margin-let: 100%;
-        width: 100%
+        margin-left: 20%;
+        width: 30%
     }
 
     to {
-        margin-left: 0%;
-        width: 50%;
+        margin-right: 10%;
+        width: 30%;
     }
 }
 
@@ -438,95 +397,84 @@ footer {
     .servicios li {
         width: 33.3333%;
     }
-}
 
-/* GENERAL */
+    /* GENERAL */
 
-/* hasta 480px */
-@media screen and (max-width: 30em) {
+    /* hasta 480px */
+    @media screen and (max-width: 30em) {
 
-    .hero>p {
-        font-size: 0.8rem;
+        .claseTitulo {
+            font-size: 0.8rem;
+        }
+
+        .divSeccion {
+            flex-wrap: wrap;
+        }
+
+        .divSeccion p {
+            padding-bottom: 1em;
+            font-size: 0.5rem;
+        }
+
+        .servicio-img {
+            margin: auto;
+        }
+
+        .servicios img {
+            max-width: 100%;
+            height: 100px;
+            border-radius: 5%;
+        }
+
+        .servicio-title {
+            font-size: 0.8rem;
+        }
+
+        .cartas {
+            margin: 10px 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+
+        .cartas p {
+            font-size: 0.5rem;
+            text-align: center;
+        }
+
+
+        form input {
+            width: 200px;
+        }
+
+        #userConsulta {
+            width: 200px;
+        }
+
+
+
+        /* MEDIA QUERIES AGENDA TU ENTREVISTA */
+        .divSeccion1 {
+            font-size: 0.8rem;
+            text-align: center;
+            padding: 3px;
+        }
+
+        .cartas1 {
+            margin: 5px 5px;
+            font-size: 0.7rem;
+        }
+
+        /* MEDIA QUERIES TRABAJA CON NOSOTROS */
+        section h2 {
+            font-size: 0.6rem;
+        }
+
     }
 
-    .claseTitulo {
-        font-size: 0.8rem;
-    }
+    /* hasta 960px */
+    @media screen and (max-width: 60em) {
 
-    .divSeccion {
-        flex-wrap: wrap;
-    }
 
-    .divSeccion p {
-        padding-bottom: 1em;
-        font-size: 0.5rem;
-    }
-
-    .servicio-img {
-        margin: auto;
-    }
-
-    .servicios img {
-        max-width: 100%;
-        height: 100px;
-        border-radius: 5%;
-    }
-
-    .servicio-title {
-        font-size: 0.8rem;
-    }
-
-    .cartas {
-        margin: 10px 10px;
-        margin-bottom: 20px;
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
-
-    .cartas p {
-        font-size: 0.5rem;
-        text-align: center;
-    }
-
-    header {
-        justify-content: center;
-    }
-
-    form input {
-        width: 200px;
-    }
-
-    #userConsulta {
-        width: 200px;
-    }
-
-    footer {
-        font-size: 0.5rem;
-    }
-
-    /* MEDIA QUERIES AGENDA TU ENTREVISTA */
-    .divSeccion1 {
-        font-size: 0.8rem;
-        text-align: center;
-        padding: 3px;
-    }
-
-    .cartas1 {
-        margin: 5px 5px;
-        font-size: 0.7rem;
-    }
-
-    /* MEDIA QUERIES TRABAJA CON NOSOTROS */
-    section h2 {
-        font-size: 0.6rem;
-    }
-
-}
-
-/* hasta 960px */
-@media screen and (max-width: 60em) {
-
-    footer {
-        font-size: 0.5rem;
     }
 }
