@@ -18,59 +18,22 @@ html {
         "footer footer footer footer";
     color: black;
 }
-
 header {
     grid-area: header;
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
     align-items: center;
-    height: 130px;
+    height: 140px;
     background-color: white;
     margin-bottom: 2px;
 }
 
 header img {
-    padding-top: 45px;
-    padding-bottom: 30px;
-    width: 150px;
-    height: 200px;
+    border-radius: 15px;
 }
 
-nav {
-    padding: 1rem 1.4rem;
-    align-items: center;
-    justify-content: center;
-}
 
-nav ul {
-    list-style: none;
-    flex-wrap: wrap;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    color: black;
-}
-
-nav li {
-    list-style-type: none;
-    padding: 0;
-    font-size: 1.2rem;
-    margin-right: 0.5rem;
-}
-
-nav li:last-of-type {
-    margin-right: 0;
-}
-
-nav a {
-    text-decoration: none;
-    color: inherit;
-    display: block;
-    flex-wrap: wrap;
-    padding: 1em;
-}
-
-nav a:hover {
+.navhover:hover {
     background-color: wheat;
 }
 
@@ -488,15 +451,6 @@ footer {
 
 /* hasta 480px */
 @media screen and (max-width: 30em) {
-    nav {
-        padding: 0.1rem 0.1rem;
-    }
-
-    nav li {
-        padding: 0;
-        font-size: 0.6rem;
-        margin-right: 0.1rem;
-    }
 
     .hero>p {
         font-size: 0.8rem;
