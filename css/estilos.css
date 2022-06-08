@@ -20,18 +20,12 @@ html {
 }
 header {
     grid-area: header;
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    height: 140px;
     background-color: white;
     margin-bottom: 2px;
 }
-
-header img {
-    border-radius: 15px;
-}
-
+.imgheader {
+    margin-right: 200px;
+    }
 
 .navhover:hover {
     background-color: wheat;
@@ -435,7 +429,6 @@ footer {
         padding-top: 66.6%;
     }
 }
-
 
 @media screen and (min-width: 56rem) {
     .cards-item {
