@@ -10,12 +10,6 @@
   <title>BAC LAW & DEVELOPERS</title>
   <link rel="stylesheet" href="css/estilos.css">
   <link rel="icon" href="assets/favicon.ico">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 </head>
 
 <body class="grid-container">
@@ -45,19 +39,40 @@
   </header>
   <!-- contenido -->
   <main>
-    <section class="hero">
-      <p class="animacionP"> La justicia, al alcance de tu mano.</p>
-    </section>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+       </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="assets/justiciafondo.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/justiciafondo2.png" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
     <section>
-      <p class="claseTitulo">¿QUIÉNES SOMOS?</p>
+      <p class="claseTitulo lead animacionP">¿QUIÉNES SOMOS?</p>
+      <hr>
       <div class="divSeccion">
-        <p> Somos un equipo de abogados y de desarrolladores web que ofrecemos un servicio
-          novedoso y eficiente, con la intención de resignificar el servicio jurídico al alcance de tu mano </p>
+        <p class="lead"> Somos un equipo de abogados y de desarrolladores web que ofrecemos un servicio
+          novedoso y eficiente, con la intención de resignificar el servicio jurídico al alcance de tu mano.</p>
         <div class="imgQuienesSomos animacionAgranda"><img src="assets/quienessomos.jpg" alt="alcancejusticia"></div>
       </div>
+      <hr class="hr1">
     </section>
     <section class="fondoSeccion">
-      <p class="claseTitulo">NUESTROS SERVICIOS</p>
+      <p class="claseTitulo lead animacionP">NUESTROS SERVICIOS</p>
+      <hr>
       <h2 class="claseTitulo">JURÍDICOS</h2>
       <ul class="servicios">
         <li>
@@ -103,8 +118,10 @@
           </div>
         </li>
       </ul>
+      <hr class="hr1">
     </section>
     <section class="fondoSeccion">
+      <hr>
       <h2 class="claseTitulo">DESARROLLO WEB</h2>
       <ul class="servicios">
         <li>
@@ -123,62 +140,59 @@
         </li>
       </ul>
     </section>
-    <section class="cartas">
-      <h3 class="claseTitulo">NUESTRO TRABAJO SE DESTACA POR</h3>
-      <p class="animacionP">- EFICIENCIA -</p>
-      <p class="animacionP">- INNOVACIÓN -</p>
-      <p class="animacionP"> - CELERIDAD -</p>
-    </section>
-    <section class="fondoSeccion">
-      <p class="claseTitulo">ORIENTACIÓN SIN CARGO</p>
-      <form action="" method="get" enctype="text/plain" id="formulario">
-        <fieldset>
-          <legend>Información Personal</legend>
+    <section>
+      <p class="claseTitulo lead animacionP">ORIENTACIÓN SIN CARGO</p>
+      <hr>
+      <form class="row g-3">
+        <div class="col-md-6">
+          <label for="userName" class="form-label lead">Nombre y Apellido:</label>
+          <input type="text" class="form-control" id="userName" required placeholder="Juan Perez">
+        </div>
+        <div class="col-md-6">
+          <label for="userNmb" class="form-label lead">Celular:</label>
+          <input type="text" class="form-control" id="userNmb" required
+          placeholder= "261 155278343">
+        </div>
+        <div class="col-12">
+          <label for="inputAddress" class="form-label lead">Localidad:</label>
+          <input type="text" class="form-control" id="inputAddress" required placeholder="Calle 1234, Godoy Cruz, Mendoza">
+        </div>
+        <div class="col-md-6">
+          <label for="inputService" class="form-label lead">Servicio:</label>
+          <select id="inputServie" class="form-select">
+            <option>Programación Web</option>
+            <option>Jurídico</option>
+            <option>Ambos</option>
+          </select>
+        </div>
+        <div class="col-md-6">
+          <label for="userConsulta" class="form-label lead">Su consulta:</label>
+          <input type="text" class="form-control" id="userConsulta">
+        </div>
+        <div class="col-12">
           <div>
-            <label for="userName">Nombre y Apellido:</label><br>
-            <input type="text" id="userName" name="userName" required placeholder="Su nombre completo">
+            Acepta términos y condiciones &nbsp;<input type="checkbox" name="acepta" value="1" required />
           </div>
-          <div>
-            <label for="servicio">Servicio de su interés:</label><br>
-            <select name="servicio">
-              <option value="juridico">Jurídico</option>
-              <option value="paginaWeb">Página Web</option>
-              <option value="ambos">Ambos</option>
-            </select>
-          </div>
-          <div>
-            <label for="userCity">Localidad:</label><br>
-            <input type="text" id="userCity" name="userCity" required placeholder="Su localidad">
-          </div>
-          <div>
-            <label for="userNmb">Celular:</label><br>
-            <input type="text" id="userNmb" name="userNmb" required
-              placeholder="Su celular con la característica de su localidad">
-          </div>
-          <div>
-            <label for="userEmail">Email:</label><br>
-            <input type="email" id="userEmail" name="userEmail" required placeholder="Su correo electrónico">
-          </div>
-          <div>
-            <label for="userConsulta">Consulta:</label><br>
-            <textarea name="userConsulta" id="userConsulta" rows="4" required
-              placeholder="Escriba su consulta"></textarea>
-          </div>
-          <div>
-            Acepta términos y condiciones
-            <input type="checkbox" name="acepta" value="1" required />
-          </div>
-          <div>
-            <input class="buttonClass" type="submit" value="Enviar">
-          </div>
-        </fieldset>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Enviar consulta</button>
+        </div>
       </form>
-    </section>
+      <hr class="hr1">
   </main>
   <!-- inicio de footer -->
-  <footer>
-    <h3>¡Seguinos en nuestras redes sociales y enterate de todas las novedades!</h3>
-  </footer>
+  <footer class="bg-light text-center text-black lead">
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color:#FFCBA4" >
+    ¡Seguinos en nuestras redes sociales!
+  <div class="text-center p-3" style="background-color:#f4b482">
+    © 2020 Copyright:
+    <a class="text-black" href="www.baclawytech.com">Bac Law & Tech</a>
+  </div>
+</div>
+  <!-- Copyright -->
+</footer>
+  
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
     crossorigin="anonymous"></script>
