@@ -1,3 +1,4 @@
+/* GENERAL */
 * {
     margin: 0;
     padding: 0;
@@ -37,12 +38,9 @@ main {
     background-color: #EBEBEB;
 }
 
-
 section {
     padding: 4em;
 }
-
-
 
 .claseTitulo {
     font-size: 1.8rem;
@@ -75,72 +73,26 @@ section {
     color: black;
 }
 
-.cartas {
-    background-color: #4c4444;
-    color: white;
-    margin: 10px 200px;
-    margin-bottom: 100px;
-    flex-wrap: wrap;
-    flex-direction: column;
-    border-radius: 20px;
-}
-
-.cartas p {
-    font-size: 2rem;
-    text-align: center;
-}
-
-.buttonClass {
-    font-size: 1rem;
-    width: 100px;
-    height: 50px;
-    border-width: 2px;
-    color: black;
-    border-color: #4e5875;
-    font-weight: bold;
-    border-radius: 15px;
-    box-shadow: 0px 9px 38px 0px black;
-    text-shadow: 0px 1px 0px #ffffff;
-    background: #b3d3d8;
-}
-
-.buttonClass:hover {
-    background: linear-gradient(#ccc2a6, rgba(223, 208, 164, 1));
-}
-
 footer {
     grid-area: footer;
 }
-/* utils estilos */
+
+/* UTILS */
 hr {
     height: 10px;
     width: 30%;
     background-color: black;
-  }
+}
+
 .hr1 {
     height: 10px;
     width: 30%;
     margin-left: 70%;
     margin-right: 0%;
     background-color: black;
-  }
-.textoCentrado {
-    text-align: center;
 }
 
-.limpiarLista {
-    list-style-type: none;
-}
-
-.listaCentrada {
-    width: 30%;
-    margin: auto;
-}
-
-.wheatColor {
-    color: wheat;
-}
-
+/* INDEX PAGE */
 .servicios {
     list-style: none;
     display: flex;
@@ -192,35 +144,6 @@ hr {
 
 /* TIENDA LEGAL PAGE */
 
-.cards {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    justify-content: center;
-}
-
-.cards-item {
-    display: flex;
-    padding: 1rem;
-
-}
-
-.card {
-    background-color: white;
-    border-radius: 0.25rem;
-    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    width: 100%;
-}
-
-.card-image:hover {
-    filter: contrast(100%);
-}
-
 .card-title {
     color: darkgray;
     font-size: 1rem;
@@ -235,44 +158,18 @@ hr {
     margin-bottom: 1rem;
 }
 
-.card-content {
-    display: flex;
-    flex: 1 1 auto;
-    flex-direction: column;
-    padding: 0.5rem;
-}
-
-.card-image {
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: 200px;
-    border-top-left-radius: 0.25rem;
-    border-top-right-radius: 0.25rem;
-    filter: contrast(70%);
-    overflow: hidden;
-    position: relative;
-    transition: filter 0.5s cubic-bezier(.43, .41, .22, .91);
-}
-
-.card-image::before {
-    background-image: url("https://via.placeholder.com/350?text=Producto");
-    content: "";
-    display: block;
-    padding-top: 56.25%;
-}
-
-/* FINAL TIENDA LEGAL PAGE */
-
 /* AGENDA TU ENTREVISTA PAGE */
 .divSeccion1 {
     font-size: 1.5rem;
     text-align: center;
     padding: 20px;
-    background-color:#98b6b6;
+    background-color: #98b6b6;
 }
+
 .divSeccion1 h2 {
-margin-top: 20px;
+    margin-top: 20px;
 }
+
 .divSeccion1 p {
     padding: 5px 5px;
 }
@@ -284,17 +181,6 @@ margin-top: 20px;
 .colorWheat {
     color: wheat;
 }
-
-.cartas1 {
-    background-color: #8A8A8A;
-    color: white;
-    margin: 40px 50px;
-    border-radius: 20px;
-    font-size: 1.5rem;
-    text-align: center;
-}
-
-/* FINAL AGENDA TU ENTREVISTA PAGE */
 
 /* TRABAJA CON NOSOTROS PAGE */
 .servicios1 {
@@ -335,6 +221,25 @@ margin-top: 20px;
     border-radius: 5%;
 }
 
+/* CAPACITATE PAGE */
+.buttonClass {
+    font-size: 1rem;
+    width: 100px;
+    height: 50px;
+    border-width: 2px;
+    color: black;
+    border-color: #4e5875;
+    font-weight: bold;
+    border-radius: 15px;
+    box-shadow: 0px 9px 38px 0px black;
+    text-shadow: 0px 1px 0px #ffffff;
+    background: #b3d3d8;
+}
+
+.buttonClass:hover {
+    background: linear-gradient(#ccc2a6, rgba(223, 208, 164, 1));
+}
+
 /* Animaciones */
 .animacionP {
     animation: 5s infinite alternate slidein;
@@ -368,118 +273,8 @@ margin-top: 20px;
     margin-top: 10px;
 }
 
-/* FINAL TRABAJA CON NOSOTROS PAGE */
-
-
-/* MEDIA QUERIES UL */
-
-@media screen and (min-width: 40rem) {
-    .cards-item {
-        width: 50%;
+@media (max-width: 700px) and (min-width: 400px) {
+    .animacionP {
+            animation: none
+        }
     }
-
-    .card-image::before {
-        content: "";
-        display: block;
-        padding-top: 66.6%;
-    }
-
-    .servicios li {
-        width: 50%;
-    }
-
-    .servicio-img::before {
-        display: block;
-        padding-top: 66.6%;
-    }
-}
-
-@media screen and (min-width: 56rem) {
-    .cards-item {
-        width: 33.3333%;
-    }
-
-    .servicios li {
-        width: 33.3333%;
-    }
-
-    /* GENERAL */
-
-    /* hasta 480px */
-    @media screen and (max-width: 30em) {
-
-        .claseTitulo {
-            font-size: 0.8rem;
-        }
-
-        .divSeccion {
-            flex-wrap: wrap;
-        }
-
-        .divSeccion p {
-            padding-bottom: 1em;
-            font-size: 0.5rem;
-        }
-
-        .servicio-img {
-            margin: auto;
-        }
-
-        .servicios img {
-            max-width: 100%;
-            height: 100px;
-            border-radius: 5%;
-        }
-
-        .servicio-title {
-            font-size: 0.8rem;
-        }
-
-        .cartas {
-            margin: 10px 10px;
-            margin-bottom: 20px;
-            flex-wrap: wrap;
-            flex-direction: column;
-        }
-
-        .cartas p {
-            font-size: 0.5rem;
-            text-align: center;
-        }
-
-
-        form input {
-            width: 200px;
-        }
-
-        #userConsulta {
-            width: 200px;
-        }
-
-
-
-        /* MEDIA QUERIES AGENDA TU ENTREVISTA */
-        .divSeccion1 {
-            font-size: 0.8rem;
-            text-align: center;
-            padding: 3px;
-        }
-
-        .cartas1 {
-            margin: 5px 5px;
-            font-size: 0.7rem;
-        }
-
-        /* MEDIA QUERIES TRABAJA CON NOSOTROS */
-        section h2 {
-            font-size: 0.6rem;
-        }
-
-    }
-
-    /* hasta 960px */
-    @media screen and (max-width: 60em) {
-
-
-    }
-}
