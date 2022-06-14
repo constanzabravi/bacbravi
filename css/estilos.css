@@ -11,7 +11,7 @@ html {
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-template-rows: auto;
     grid-template-areas:
         "header header header header"
@@ -30,7 +30,7 @@ header {
 }
 
 .navhover:hover {
-    background-color: #FFCBA4;
+    background-color: wheat;
 }
 
 main {
@@ -73,8 +73,65 @@ section {
     color: black;
 }
 
+/* footer */
 footer {
     grid-area: footer;
+}
+
+.footer {
+    background: rgb(79, 79, 79);
+    font-family: 'Play', sans-serif;
+    text-align: center;
+    color: wheat;
+}
+
+.footer .row {
+    width: 100%;
+    margin: 1% 0%;
+    padding: 0.6% 0%;
+    font-size: 0.8em;
+    display: inline-block;
+}
+
+.footer .row a {
+    text-decoration: none;
+    color: wheat;
+    transition: 0.5s;
+}
+
+.footer .row a:hover {
+    color: black;
+}
+
+.footer .row ul {
+    width: 100%;
+}
+
+.footer .row ul li {
+    display: inline-block;
+    margin: 0px 30px;
+}
+
+.footer .row a i {
+    font-size: 2em;
+    margin: 0% 1%;
+}
+
+@media (max-width: 700px) {
+    .footer {
+        text-align: left;
+        padding: 5%;
+    }
+
+    .footer .row ul li {
+        display: block;
+        margin: 10px 0px;
+        text-align: left;
+    }
+
+    .footer .row a i {
+        margin: 0% 3%;
+    }
 }
 
 /* UTILS */
@@ -91,6 +148,7 @@ hr {
     margin-right: 0%;
     background-color: black;
 }
+
 
 /* INDEX PAGE */
 .servicios {
@@ -275,6 +333,6 @@ hr {
 
 @media (max-width: 700px) and (min-width: 400px) {
     .animacionP {
-            animation: none
-        }
+        animation: none
     }
+}
