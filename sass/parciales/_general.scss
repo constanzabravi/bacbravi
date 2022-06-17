@@ -1,0 +1,63 @@
+html {
+    font-family: 'Roboto Condensed', sans-serif;
+    header {
+        grid-area: header;
+        background-color: white;
+        .imgheader {
+            margin-right: 200px;
+        }
+    }
+    main {
+        grid-area: main;
+        background-color: #EBEBEB;
+    }
+    
+    section {
+        padding: 4em;
+    }
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-rows: auto;
+    grid-template-areas:
+        "header header header header"
+        "main main main main"
+        "footer footer footer footer";
+    color: black;
+}
+
+.navhover:hover {
+    background-color: wheat;
+}
+
+.animacionP {
+    animation: 5s infinite alternate slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 20%;
+        width: 30%
+    }
+
+    to {
+        margin-right: 10%;
+        width: 30%;
+    }
+}
+
+.animacionSalto {
+    float: left;
+    -webkit-transition: margin 0.5s ease-out;
+    -moz-transition: margin 0.5s ease-out;
+    -o-transition: margin 0.5s ease-out;
+    transition: all 0.5s ease;
+    .animacionSalto:hover {
+        margin-top: 10px;
+    }
+}
+.animacionAgranda:hover {
+    transform: scale(1.1);
+}

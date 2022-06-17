@@ -60,7 +60,6 @@ section {
     padding-right: 1em;
     font-size: 1.6rem;
 }
-
 @media (max-width: 500px) {
     .divSeccion {
         display: flex;
@@ -68,7 +67,6 @@ section {
         align-items: center;
         justify-content: space-between;
     }
-
     }
 
 .imgSeccion {
@@ -95,7 +93,7 @@ footer {
     color: wheat;
 }
 
-.footer .row {
+.footer__row {
     width: 100%;
     margin: 1% 0%;
     padding: 0.6% 0%;
@@ -103,26 +101,26 @@ footer {
     display: inline-block;
 }
 
-.footer .row a {
+.footer__row a {
     text-decoration: none;
     color: wheat;
     transition: 0.5s;
 }
 
-.footer .row a:hover {
+.footer__row a:hover {
     color: black;
 }
 
-.footer .row ul {
+.footer__row ul {
     width: 100%;
 }
 
-.footer .row ul li {
+.footer__row ul li {
     display: inline-block;
     margin: 0px 30px;
 }
 
-.footer .row a i {
+.footer__row a i {
     font-size: 2em;
     margin: 0% 1%;
 }
@@ -133,13 +131,13 @@ footer {
         padding: 5%;
     }
 
-    .footer .row ul li {
+    .footer__row ul li {
         display: block;
         margin: 10px 0px;
         text-align: left;
     }
 
-    .footer .row a i {
+    .footer__row a i {
         margin: 0% 3%;
     }
 }

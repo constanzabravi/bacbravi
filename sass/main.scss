@@ -1,3 +1,75 @@
-h1 {
-    color: red;
+/* AGENDA TU ENTREVISTA PAGE */
+@import "./parciales/reset";
+@import "./parciales/variables";
+@import "./parciales/general";
+@import "./parciales/footer";
+
+.hr {
+    height: 10px;
+    width: 30%;
+    background-color: $colornegro;
+}
+
+.hr1 {
+    height: 10px;
+    width: 30%;
+    margin-left: 70%;
+    margin-right: 0%;
+    background-color: $colornegro;
+}
+.divSeccion1 {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 20px;
+    background-color: #98b6b6;
+
+    h2 {
+        margin-top: 20px;
+    }
+    p {
+        padding: 5px 5px;
+}
+}
+
+.divSeccion {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    .divSeccion p {
+        padding-right: 1em;
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .divSeccion {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+    }
+    
+.imgSeccion {
+    border-radius: 10%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.claseTitulo {
+    font-size: 1.8rem;
+    padding-bottom: 1em;
+    
+    text: {
+     decoration: underline;
+     align: center;
+}
+}
+
+.card-text {
+    flex: 1 1 auto;
+    font-size: 0.8rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
 }
