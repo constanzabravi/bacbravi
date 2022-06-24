@@ -232,7 +232,7 @@ hr {
     background-color: #98b6b6;
 }
 
-.divSeccion1 h2 {
+.divSeccion1 h1 {
     margin-top: 20px;
 }
 
@@ -252,10 +252,10 @@ hr {
 .servicios1 {
     list-style: none;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
-    margin: 10px 10px;
+    padding: 10px;
     margin: 10px 10px;
 }
 
@@ -266,7 +266,6 @@ hr {
     margin: 10px 10px;
     background-color: #4c4444;
     border-radius: 15px;
-
 }
 
 .servicio1 {

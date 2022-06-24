@@ -1,15 +1,17 @@
+@import "./mapa";
+
 html {
     font-family: 'Roboto Condensed', sans-serif;
     header {
         grid-area: header;
-        background-color: white;
+        background-color: map-get($colores, "header");
         .imgheader {
             margin-right: 200px;
         }
     }
     main {
         grid-area: main;
-        background-color: #EBEBEB;
+        background-color: map-get($colores, "main");
     }
     
     section {
@@ -25,11 +27,11 @@ html {
         "header header header header"
         "main main main main"
         "footer footer footer footer";
-    color: black;
+    color: map-get($colores, "gridContainer");
 }
 
 .navhover:hover {
-    background-color: wheat;
+    background-color: map-get($colores, "navHover");
 }
 
 .animacionP {

@@ -95,12 +95,15 @@ footer {
   width: 30%;
   background-color: black; }
 
-.hr1 {
+.hr1, .hr2 {
   height: 10px;
   width: 30%;
+  background-color: black;
   margin-left: 70%;
-  margin-right: 0%;
-  background-color: black; }
+  margin-right: 0%; }
+
+.hr2 {
+  border-radius: 15px; }
 
 .divSeccion1 {
   font-size: 1.5rem;

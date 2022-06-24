@@ -1,11 +1,13 @@
+@import "./mapa";
+
 footer {
     grid-area: footer;
 }
     .footer {
-        background: rgb(79, 79, 79);
+        background: #4f4f4f;
         font-family: 'Play', sans-serif;
         text-align: center;
-        color: wheat;
+        color: map-get($colores, "footerText");
         &__row {
             width: 100%;
             margin: 1% 0%;
@@ -15,11 +17,11 @@ footer {
         }
         &__row a {
             text-decoration: none;
-            color:wheat;
+            color:map-get($colores, "footerRowA");
             transition: 0.5s;
         }
         &__row a:hover {
-            color: black;
+            color: map-get($colores, "footerRowHover");
         }
         &__row ul {
             width: 100%;
