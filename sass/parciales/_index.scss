@@ -1,0 +1,50 @@
+/* INDEX PAGE */
+.servicios {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+    .servicios li {
+        display: flex;
+        justify-content: center;
+        padding: 1rem;
+    }
+    
+    .servicio {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        align-items: center;
+    }
+    
+    .servicio-title {
+        font-size: 1.25rem;
+        font-weight: 300;
+        margin-bottom: 0.5rem;
+        text-align: center;
+    }
+    
+    .servicios img {
+        max-width: 200px;
+        height: 200px;
+        border-radius: 5%;
+    }
+    
+    .servicio-img {
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        filter: contrast(70%);
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .servicio-img::before {
+        display: block;
+        padding-top: 56.25%;
+    }
+    
+}
+

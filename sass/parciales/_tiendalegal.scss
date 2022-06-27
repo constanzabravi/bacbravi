@@ -1,0 +1,14 @@
+/* TIENDA LEGAL PAGE */
+
+.card-title {
+    color: darkgray;
+    font-size: 1rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    .card-text {
+        flex: 1 1 auto;
+        font-size: 0.8rem;
+        line-height: 1.5;
+        margin-bottom: 1rem;
+    }
+}

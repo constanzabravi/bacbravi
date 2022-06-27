@@ -1,4 +1,7 @@
 @import "./mapa";
+@import "./reset";
+@import "./mixins";
+@import "./footer";
 
 html {
     font-family: 'Roboto Condensed', sans-serif;
@@ -34,6 +37,86 @@ html {
     background-color: map-get($colores, "navHover");
 }
 
+.hr {
+    @include hr;
+}
+
+.hr1 {
+    @include hr;
+    margin-left: 70%;
+    margin-right: 0%;
+}
+
+.hr2 {
+    @extend .hr1;
+    border-radius: 15px;
+}
+
+.divSeccion1 {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 20px;
+    background-color: map-get($colores, "divSeccion1");
+
+    h2 {
+        margin-top: 20px;
+    }
+    p {
+        padding: 5px 5px;
+}
+}
+
+.divSeccion {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    .divSeccion p {
+        padding-right: 1em;
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .divSeccion {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+    }
+    
+.imgSeccion {
+    border-radius: 10%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.fondoSeccion {
+    background-color: #98b6b6;
+    color: black;
+}
+
+.claseTitulo {
+    font-size: 1.8rem;
+    padding-bottom: 1em;
+    
+    text: {
+     decoration: underline;
+     align: center;
+}
+}
+
+.card-text {
+    flex: 1 1 auto;
+    font-size: 0.8rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+
+// ANIMACIONES
+
 .animacionP {
     animation: 5s infinite alternate slidein;
 }
@@ -50,13 +133,19 @@ html {
     }
 }
 
+@media (max-width: 700px) {
+    .animacionP {
+        animation: none
+    }
+}
+
 .animacionSalto {
     float: left;
     -webkit-transition: margin 0.5s ease-out;
     -moz-transition: margin 0.5s ease-out;
     -o-transition: margin 0.5s ease-out;
     transition: all 0.5s ease;
-    .animacionSalto:hover {
+    &:hover {
         margin-top: 10px;
     }
 }
