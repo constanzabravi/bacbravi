@@ -1,7 +1,7 @@
 {
   "name": "bac-bravi",
   "version": "1.0.0",
-  "description": "",
+  "description": "Este proyecto es una página web que ofrece la digitalización de los estudios jurídicos tradicionales, ofreciendo los mismos servicios que se ofrecen presencialmente.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
