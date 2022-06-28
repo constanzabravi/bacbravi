@@ -152,6 +152,13 @@ html {
 
 .animacionAgranda {
     &:hover {
-        transform: scale(1.1)
-    };
+        transform: scale(1.1);
+    }
+}
+
+// Media queries de calendario de agenda tu entrevista 
+@media (max-width: 700px) {
+    .calendly-inline-widget {
+        height:350px !important;
+    }
 }
