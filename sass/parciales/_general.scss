@@ -84,7 +84,7 @@ html {
         align-items: center;
         justify-content: space-between;
     }
-    }
+}
     
 .imgSeccion {
     border-radius: 10%;
@@ -149,6 +149,9 @@ html {
         margin-top: 10px;
     }
 }
-.animacionAgranda:hover {
-    transform: scale(1.1);
+
+.animacionAgranda {
+    &:hover {
+        transform: scale(1.1)
+    };
 }
