@@ -3,13 +3,11 @@
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content:space-around;
+    justify-items: center;
     align-items: center;
-    & li {
-        display: flex;
-        justify-content: center;
-        padding: 1rem;
-    }
+    text-align: center;
+  
     & img {
         max-width: 200px;
         height: 200px;
@@ -18,15 +16,9 @@
     }
     
     .servicio {
-        display: flex;
-        flex-direction: column;
-        overflow: hidden;
-        align-items: center;
         &-title {
-            font-size: 1.25rem;
-            font-weight: 300;
+            font-size: 1rem;
             margin-bottom: 0.5rem;
-            text-align: center;
         }
         
         &-img {
@@ -43,7 +35,26 @@
         }
     
     }
-    
-    
-    
 
+.colorwhite {
+color: white;    
+}
+
+@media (max-width: 500px) {
+    .servicios
+    {
+        padding-left: 0.5em !important;
+        padding-right: 0.5em !important;
+    }
+    .servicios & img { 
+        max-width: 80px;
+        height: 80px;
+        justify-content: space-evenly;
+    }
+    .servicio {
+        &-title {
+            font-size: 0.7rem;
+            margin-bottom: 0.5rem;
+        }
+}
+}

@@ -5,11 +5,18 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="BAC ofrece servicios jurídicos y de programación de páginas webs para que los clientes obtengan un resultado rápido y eficiente en un solo lugar.">
-  <meta name="keywords" content="servicios jurídicos, legaltech, laboral, familia, sucesiones, divorcio, estudio jurídico, abogado programador, start up, contratos, derecho penal, sociedades, laboral, medicina legal, consulta legal">
+  <meta name="description"
+    content="BAC ofrece servicios jurídicos y de programación de páginas webs para que los clientes obtengan un resultado rápido y eficiente en un solo lugar.">
+  <meta name="keywords"
+    content="servicios jurídicos, legaltech, laboral, familia, sucesiones, divorcio, estudio jurídico, abogado programador, start up, contratos, derecho penal, sociedades, laboral, medicina legal, consulta legal">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   <title>BAC LAW & TECH</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/destino.css">
   <link rel="icon" href="assets/favicon.ico">
@@ -19,10 +26,10 @@
   <!-- inicio de header -->
   <header>
     <!-- inicio de navbar -->
-    <nav class="navbar navbar-expand-lg" style=" background-color: #FFFFFF;">
-      <a class="navbar-brand" href="#"><img src="assets/baclogo.jpg" width="180" height="140"
-          class="d-inline-block imgheader"></a>
+    <nav class="navbar navbar-expand-lg" style="background-color: #FFFFFF;">
       <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="assets/baclogo.png" width="200" height="140"
+          class="d-inline-block imgheader"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
           aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -68,20 +75,21 @@
       </button>
     </div>
     <section>
-      <h1 class="claseTitulo lead animacionP">¿QUIÉNES SOMOS?</h1>
+      <h1 class="colorwhite animate__animated animate__lightSpeedInRight">¿QUIÉNES SOMOS?</h1>
       <hr class="hr">
       <div class="divSeccion">
-        <p class="lead"> Somos un equipo de abogados y de desarrolladores web que ofrecemos un servicio
-          novedoso y eficiente, con la intención de resignificar el servicio jurídico al alcance de tu mano.</p>
-        <div class="animacionAgranda"><img class="imgSeccion" src="assets/quienessomos.jpg" alt="alcancejusticia"></div>
+        <p> Somos un equipo de abogados y de desarrolladores web <br>
+          que ofrecemos un servicio novedoso y eficiente, con la intención de <br>
+          resignificar el servicio jurídico al alcance de tu mano.</p>
+        <div data-aos="zoom-in-right"><img class="imgSeccion" src="assets/index.jpg" alt="alcancejusticia"></div>
       </div>
       <hr class="hr1">
     </section>
     <section class="fondoSeccion">
-      <p class="claseTitulo lead animacionP">NUESTROS SERVICIOS</p>
+      <h2>NUESTROS SERVICIOS</h2>
       <hr class="hr">
-      <h2 class="claseTitulo">JURÍDICOS</h2>
-      <ul class="servicios">
+      <h3 class="claseTitulo">JURÍDICOS</h3>
+      <ul class="row row-cols-2 row-cols-lg-4 g-4 servicios">
         <li>
           <div class="servicio">
             <div class="servicio-title">CONTRATOS</div>
@@ -129,8 +137,8 @@
     </section>
     <section class="fondoSeccion">
       <hr class="hr">
-      <h2 class="claseTitulo">DESARROLLO WEB</h2>
-      <ul class="servicios">
+      <h3 class="claseTitulo">DESARROLLO WEB</h3>
+      <ul class="row row-cols-2 row-cols-lg-4 g-4 servicios">
         <li>
           <div class="servicio">
             <div class="servicio-title">ARMÁ TU PÁGINA WEB</div>
@@ -140,7 +148,7 @@
         </li>
         <li>
           <div class="servicio">
-            <div class="servicio-title">ARMÁ TU EMPRENDIMIENTO VIRTUAL</div>
+            <div class="servicio-title">ARMÁ TU EMPRENDIMIENTO</div>
             <div class="servicio-img animacionAgranda"><img src="assets/emprendimientovirtual.png"
                 alt="arma tu emprendimiento"></div>
           </div>
@@ -148,45 +156,45 @@
       </ul>
       <hr class="hr1">
     </section>
-    <section>
-      <p class="claseTitulo lead animacionP" id="formulario">ORIENTACIÓN SIN CARGO</p>
-      <hr class="hr">
-      <form class="row g-3">
-        <div class="col-md-6">
-          <label for="userName" class="form-label lead">Nombre y Apellido:</label>
-          <input type="text" class="form-control" id="userName" required placeholder="Juan Perez">
-        </div>
-        <div class="col-md-6">
-          <label for="userNmb" class="form-label lead">Celular:</label>
-          <input type="text" class="form-control" id="userNmb" required placeholder="261 155278343">
-        </div>
-        <div class="col-12">
-          <label for="inputAddress" class="form-label lead">Localidad:</label>
-          <input type="text" class="form-control" id="inputAddress" required
-            placeholder="Calle 1234, Godoy Cruz, Mendoza">
-        </div>
-        <div class="col-md-6">
-          <label for="inputService" class="form-label lead">Servicio:</label>
-          <select id="inputServie" class="form-select">
-            <option>Programación Web</option>
-            <option>Jurídico</option>
-            <option>Ambos</option>
-          </select>
-        </div>
-        <div class="col-md-6">
-          <label for="userConsulta" class="form-label lead">Su consulta:</label>
-          <input type="text" class="form-control" id="userConsulta">
-        </div>
-        <div class="col-12">
-          <div>
-            Acepta términos y condiciones &nbsp;<input type="checkbox" name="acepta" value="1" required />
-          </div>
-        </div>
-        <div class="col-12">
-          <button type="submit" class="btn btn-primary">Enviar consulta</button>
-        </div>
-      </form>
-      <hr class="hr1">
+          <section>
+            <p class="claseTitulo" id="formulario">ORIENTACIÓN SIN CARGO</p>
+            <hr class="hr">
+            <form class="row g-3">
+              <div class="col-md-6">
+                <label for="userName" class="form-label lead">Nombre y Apellido:</label>
+                <input type="text" class="form-control" id="userName" required placeholder="Juan Perez">
+              </div>
+              <div class="col-md-6">
+                <label for="userNmb" class="form-label lead">Celular:</label>
+                <input type="text" class="form-control" id="userNmb" required placeholder="261 155278343">
+              </div>
+              <div class="col-12">
+                <label for="inputAddress" class="form-label lead">Localidad:</label>
+                <input type="text" class="form-control" id="inputAddress" required
+                  placeholder="Calle 1234, Godoy Cruz, Mendoza">
+              </div>
+              <div class="col-md-6">
+                <label for="inputService" class="form-label lead">Servicio:</label>
+                <select id="inputServie" class="form-select">
+                  <option>Programación Web</option>
+                  <option>Jurídico</option>
+                  <option>Ambos</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label for="userConsulta" class="form-label lead">Su consulta:</label>
+                <input type="text" class="form-control" id="userConsulta">
+              </div>
+              <div class="col-12">
+                <div>
+                  Acepta términos y condiciones &nbsp;<input type="checkbox" name="acepta" value="1" required />
+                </div>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary">Enviar consulta</button>
+              </div>
+            </form>
+            <hr class="hr1">
   </main>
 
   <!-- inicio de footer -->
@@ -200,23 +208,27 @@
       </div>
       <div class="footer__row">
         <ul>
-          <li><a href="#" >INICIO</a></li>
+          <li><a href="#">INICIO</a></li>
           <li><a href="pages/agenda-tu-entrevista.html"">AGENDÁ TU ENTREVISTA</a></li>
-          <li><a href="#formulario">ORIENTACIÓN SIN CARGO</a></li>
+          <li><a href=" #formulario">ORIENTACIÓN SIN CARGO</a></li>
           <li><a href="pages/tienda-legal.html">TIENDA LEGAL</a></li>
           <li><a href="pages/trabaja-con-nosotros.html">TRABAJÁ CON NOSOTROS</a></li>
           <li><a href="pages/capacitate.html">CAPACITATE</a></li>
         </ul>
       </div>
-      <div class="footer__row">
-        BAC LAW & TECH - Copyright © 2022 - All rights reserved 
+      <div class="footer__row footerFinal">
+        BAC LAW & TECH - Copyright © 2022 - All rights reserved
       </div>
     </div>
   </footer>
-
+  <a href="https://wa.me/26111111111?text=¡Hola,%20BAC%20LAW%20y%20TECH!%20Me%20gustaría%20realizar%20una%20consulta." class="whatsapp" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
     crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>

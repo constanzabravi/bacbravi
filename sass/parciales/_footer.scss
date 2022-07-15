@@ -4,38 +4,42 @@ footer {
     grid-area: footer;
 }
     .footer {
-        background: #4f4f4f;
-        font-family: 'Play', sans-serif;
+        background: map-get($colores, "footerBackg");
         text-align: center;
         color: map-get($colores, "footerText");
         &__row {
             width: 100%;
-            margin: 1% 0%;
+            margin: 0.3% 0%;
             padding: 0.6% 0%;
-            font-size: 0.8em;
+            font-size: 1rem;
             display: inline-block;
         }
         &__row a {
             text-decoration: none;
             color:map-get($colores, "footerRowA");
-            transition: 0.5s;
-        }
-        &__row a:hover {
-            color: map-get($colores, "footerRowHover");
         }
         &__row ul {
             width: 100%;
         }
         &__row ul li {
             display: inline-block;
-            margin: 0px 30px;
+            margin: 0px 20px;
+            padding:  0.6% 0.6%;
+        }
+        &__row ul li:hover {
+            color: black;
+            background-color: white;
+            
         }
         &__row a i {
-            font-size: 2em;
+            font-size: 2rem;
             margin: 0% 1%;
         }
     }
 
+.footerFinal{
+    font-weight: 600;
+}
 //  Media queries //
 
 @media (max-width: 700px) {
