@@ -19,7 +19,8 @@
         &-title {
             font-size: 1rem;
             margin-bottom: 0.5rem;
-        }
+            font-weight: 600;
+                }
         
         &-img {
             background-position: center center;
@@ -47,8 +48,8 @@ color: white;
         padding-right: 0.5em !important;
     }
     .servicios & img { 
-        max-width: 80px;
-        height: 80px;
+        max-width: 90px;
+        height: 90px;
         justify-content: space-evenly;
     }
     .servicio {
