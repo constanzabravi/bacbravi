@@ -34,14 +34,29 @@
                 padding-top: 56.25%;
             }
         }
-    
     }
+    
+.botonindex {
+        font-family:'Oswald', sans-serif;
+        font-size: 1.2rem;
+}
 
 .colorwhite {
 color: white;    
 }
 
-@media (max-width: 500px) {
+// MEDIA QUERIES 
+
+@media (max-width: 500px) {   
+    .textmq {
+        font-size: 0.9rem;
+        font-family: 'Roboto', sans-serif;
+        text-transform: uppercase;
+    }
+    .botonindex {
+        font-family:'Oswald', sans-serif;
+        font-size: 0.9rem;
+    }
     .servicios
     {
         padding-left: 0.5em !important;

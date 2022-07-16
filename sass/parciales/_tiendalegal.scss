@@ -15,6 +15,8 @@
   }
 }
 
+// BOTON 
+
 @media (hover: hover) {
   #creditcard {
     /*  set start position */
@@ -57,39 +59,40 @@
 
 
 .button {
-  border: none;
-  outline: none;
-  background-color: purple;
-  padding: 1rem 90px 1rem 2rem;
-  position: relative;
-  border-radius: 8px;
-  letter-spacing: 0.7px;
-  background-color: #5086bd;
-  color: #fff;
-  font-size: 1rem;
-  font-family: 'Oswald', sans-serif;
-  cursor: pointer;
-  box-shadow: rgba(0, 9, 61, 0.2) 0px 4px 8px 0px;
+   border: none;
+   outline: none;
+   background-color: purple;
+   padding: 1rem 90px 1rem 2rem;
+   position: relative;
+   border-radius: 8px;
+   letter-spacing: 0.7px;
+   background-color: #5086bd;
+   color: #fff;
+   font-size: 1rem;
+   font-family: 'Oswald', sans-serif;
+   cursor: pointer;
+   box-shadow: rgba(0, 9, 61, 0.2) 0px 4px 8px 0px;
 
-  .button:hover .button__text span {
+    &:hover .button__text span {
     transform: translateY(-0.25rem);
     transition: transform .2s ease-in-out;
   }
 
   .button:active {
     transform: translateY(1px);
-  }
-  
+    }
   .button__svg {
     position: absolute;
     overflow: visible;
     bottom: 6px;
     right: 0.2rem;
     height: 140%;
-  }
-}
+    }
 
-// MEDIA QUERIES BUTTON
+  }
+
+
+// MEDIA QUERIES BOTON
 @media (max-width: 500px) {
 .button {
   padding: 0.2rem 45px 0.2rem 1rem;

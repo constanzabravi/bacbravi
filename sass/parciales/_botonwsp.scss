@@ -1,4 +1,6 @@
 
+@import "./variables";
+
 /* BOTON DE WHAT'S APP*/
 .whatsapp {
     position:fixed;
@@ -6,11 +8,11 @@
     height:60px;
     bottom:40px;
     right:40px;
-    background-color:#25d366;
-    color:#FFF;
+    background-color: $colorverde;
+    color: $colorblanco;
     border-radius:50px;
-    text-align:center;
-    font-size:30px;
+    text-align: $text-align;
+    font-size: $font-size;
     z-index:100;
     &-icon {
       margin-top:13px;

@@ -1,0 +1,79 @@
+@import "./variables";
+
+// TITULOS
+%titulos {
+    font-family: 'Oswald', sans-serif;
+    padding: 10px 10px;
+}
+h1 {
+    @extend %titulos;
+    font-size: 3rem;
+    text-shadow: 4px 4px $colornegro;
+    }
+
+h2 {
+    @extend %titulos;
+    color: $colornegro;
+    text-shadow: 4x 4x $colorblanco;
+    font-size: 2rem;
+    text-align: center;
+    padding: 20px 20px;
+    }
+
+// CLASE TITULOS
+
+.claseTitulo {
+    font-size: 1.8rem;
+    padding-bottom: 1em;
+    font-family: 'Oswald', sans-serif;
+    text: {
+       decoration: underline;
+       align: center;
+  }
+  }
+  
+  //   MEDIA QUERIES TITULOS
+@media (max-width: 500px) {
+  h1 {
+      font-size: 1.7rem;
+      text-shadow: 2px 2px $colornegro;
+      padding: 7px 7px;
+      }
+
+  h2 {
+      font-size: 1.5rem;
+      text-shadow: 2px 2px $colorblanco;
+      padding: 8px 8px;
+      }
+  
+  .claseTitulo { 
+      font-size: 1.3rem;
+  }
+  }
+
+//   TEXTO Y BOTON
+%textoyboton {   
+    font-size: 1rem;
+    text-transform: uppercase;
+} 
+.textmq {
+    @extend %textoyboton;
+    font-family: 'Roboto', sans-serif;
+}
+.botonindex {
+    @extend %textoyboton;
+    font-family:'Oswald', sans-serif;
+
+}
+// MEDIA QUERIES TEXTO Y BOTON
+@media (max-width: 500px) { 
+ .textmq {   
+        font-size: 0.9rem;
+    } 
+
+    }
+.botonindex {
+        font-size: 0.8rem;
+    }
+
+

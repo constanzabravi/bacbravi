@@ -3,9 +3,11 @@
 @import "./mixins";
 @import "./footer";
 
+// HTML 
 html {
     header {
         grid-area: header;
+        height: 140px;
     }
         .imgheader {
             margin-right: 180px;
@@ -14,16 +16,18 @@ html {
     
     main {
         grid-area: main;
-        background-color: #d9dcf7;
+        background-color: map-get($colores, "main");
         font-family: 'Oswald', sans-serif;
     }
     section {
         font-size: 1.3rem;
         padding: 2em;
-        background-color: #d9dcf7;
+        background-color: map-get($colores, "section");
         font-family: 'Roboto', sans-serif;
     }
 }
+
+// GRID
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -34,12 +38,23 @@ html {
         "footer footer footer footer";
 }
 
+// NAV
 .navhover:hover {
     background-color: map-get($colores, "navHover");
 }
 
+@media (max-width: 800px) {
+
+.fontsizemq {
+font-size: 1rem !important;
+}
+}
+
+// HR DISEÑO GENERAL DE TODAS LAS PAGINAS
 .hr {
     @include hr;
+    margin-left: 10%;
+    margin-right: 70%;
 }
 
 .hr1 {
@@ -48,26 +63,24 @@ html {
     margin-right: 0%;
 }
 
-.hr2 {
-    @extend .hr1;
-    border-radius: 15px;
-}
-
 // MEDIA QUERIES HTML PRINCIPAL
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
 
     html {
         header {
-    .imgheader {
-        margin-right: 0px;
+          height: initial;
+         .imgheader {
+            margin-right: 0px;
+            margin-left: 0px;
+        }
     }
 }
         section {
-            padding: 1em;
-            font-size: 0.9rem;
+          padding: 1em;
+          font-size: 0.9rem;
     }
-}
+
     .hr {
         height: 10px;
         width: 100px;
@@ -76,55 +89,36 @@ html {
         height: 10px;
         width: 100px;
      }
-}
+    }
 
 // ENCABEZADO
 
 .encabezado {
     background-image: url("/assets/cieloencabezado.png");
     background-size: cover;
-    color: #eee;
+    color: map-get($colores, "encabezado");
     text-align: left;
    &::after {
         display: block;
         content: "";
-        border-top: 40px solid  #9DB8E7;
-        border-right: 95vw solid transparent;
-        background-color: #d9dcf7;
+        border-top: 40px solid  map-get($colores, "encabezadoBorder");
+        border-right: 100vw solid transparent;
+        background-color: map-get($colores, "encabezadoBackg");
       }
 }
-
   .wrapper {
       padding: 30px;
     }
-  
-  
-  h1 {
-      font-size: 3rem;
-      font-family: 'Oswald', sans-serif;
-      text-shadow: 4px 4px black;
-      }
-  h2 {
-      color: black;
-      text-shadow: 4px 4px white;
-      font-size: 2rem;
-      font-family: 'Oswald', sans-serif;
-      text-align: center;
-      padding: 20px 20px;
-      }
 
-@media (max-width: 500px) {
-    h1 {
-        font-size: 1.7rem;
-        font-family: 'Oswald', sans-serif;
-        text-shadow: 2px 2px black;
-        }
-    h2 {
-        font-size: 1.5rem;
-        text-shadow: 2px 2x white;
-        padding: 8px 8px;
-        }
+    // SECCION 
+ 
+.card-text {
+    flex: 1 1 auto;
+    font-size: 0.8rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
     }
+    
 .divSeccion1 {
     font-size: 1.5rem;
     text-align: center;
@@ -135,6 +129,8 @@ html {
     }
     p {
         padding: 5px 5px;
+        text-transform: uppercase;
+        font-size: 1rem;
 }
 }
 
@@ -143,63 +139,38 @@ html {
     flex-wrap: nowrap;
     align-items: center;
     justify-content: space-evenly;
-    .divSeccion p {
+    & p {
         padding-right: 0.4em;
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
 }
 
+.imgSeccion {
+    width:300px;
+    height:300px;
+    border-radius: 150px;
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.8);
+    margin: 10px 10px;
+    }
+
+// MEDIA QUERIES SECCION
 @media (max-width: 500px) {
 .divSeccion {
         display: flex;
         flex-wrap: nowrap;
         align-items: center;
-        justify-content: space-around;
-    }
-}
-    
-.imgSeccion {
-        width:300px;
-        height:300px;
-        border-radius: 150px;
-        box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.8);
-        margin: 10px 10px;
-    }
-
-    @media (max-width: 500px) {
-        .imgSeccion { 
-            width:120px;
-            height:120px;
-            box-shadow: 0px;
+    & p {
+          padding-right: 10px;
+          font-size: 0.8rem;
+          margin: 10px 10px;
         }
-    }
-.fondoSeccion {
-    color: black;
+ }
+.imgSeccion { 
+        width:120px;
+        height:120px;
+        box-shadow: 0px;
+ }
 }
-
-.claseTitulo {
-    font-size: 1.8rem;
-    padding-bottom: 1em;
-    font-family: 'Oswald', sans-serif;
-    text: {
-     decoration: underline;
-     align: center;
-}
-
-}
-@media (max-width: 500px) {
-    .claseTitulo { 
-    font-size: 1.3rem;
-}
-}
-
-.card-text {
-    flex: 1 1 auto;
-    font-size: 0.8rem;
-    line-height: 1.5;
-    margin-bottom: 1rem;
-}
-
 
 // ANIMACIONES
 
@@ -220,6 +191,22 @@ html {
     }
 }
 
+.animacionFooter {
+    float: center;
+    -webkit-transition: margin 0.5s ease-out;
+    -moz-transition: margin 0.5s ease-out;
+    -o-transition: margin 0.5s ease-out;
+    transition: all 0.5s ease;
+    &:hover {
+        margin-top: 10px;
+    }
+}
+
+.animacionFooter {
+    &:hover {
+        transform: scale(1.1);
+    }
+}
 // Media queries de calendario de agenda tu entrevista 
 @media (max-width: 700px) {
     .calendly-inline-widget {

@@ -9,7 +9,6 @@ footer {
         color: map-get($colores, "footerText");
         &__row {
             width: 100%;
-            margin: 0.3% 0%;
             padding: 0.6% 0%;
             font-size: 1rem;
             display: inline-block;
@@ -27,13 +26,14 @@ footer {
             padding:  0.6% 0.6%;
         }
         &__row ul li:hover {
-            color: black;
-            background-color: white;
+            color: map-get($colores, "footerRowHover");
+            background-color: map-get($colores, "footerHoverBackg")
             
         }
         &__row a i {
             font-size: 2rem;
             margin: 0% 1%;
+            padding: 5px 5px;
         }
     }
 
@@ -42,18 +42,38 @@ footer {
 }
 //  Media queries //
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
     .footer {
         text-align: left;
-        padding: 3%;
+        padding: 2%;
         .footer__row ul li {
             display: block;
-            margin: 10px 0px;
+            margin: 5px 0px;
             text-align: left;
         }
         .footer__row a i {
-            margin: 0% 3%;
+            margin: 0% 2%;
         }
     }
 
+    .footerFinal{
+        text-align: center;
+    }
 }
+
+@media (min-width: 820px) {
+.footer__row {
+    display: flex;
+    justify-content: center;
+}
+}
+
+@media (min-width: 200px) {
+    .footer__row {
+        display: flex;
+        justify-content: center;
+       & a i {
+        padding: 10px 10px;
+        }
+    }
+    }

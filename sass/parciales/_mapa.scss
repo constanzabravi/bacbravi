@@ -1,4 +1,4 @@
-// Este mapa se aplicó al archivo main.scss y a los parciales scss de footer.scss y general.scss
+// Este mapa se aplicó a los parciales scss de footer.scss y general.scss
 
 $colores: (
     "hr": black,
@@ -7,8 +7,11 @@ $colores: (
     "footerBackg": #A3A6BA,
     "footerRowA": black,
     "footerRowHover": black,
-    "header": white,
-    "main": #EBEBEB,
-    "gridContainer": black,
-    "navHover":  #A3A6BA
+    "footerHoverBackg": white,
+    "main": #d9dcf7,
+    "section": #d9dcf7,
+    "navHover": #A3A6BA,
+    "encabezado": #eee,
+    "encabezadoBorder": #9DB8E7,
+    "encabezadoBackg": #d9dcf7,
 );
