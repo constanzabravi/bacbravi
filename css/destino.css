@@ -46,7 +46,7 @@ footer {
     padding: 2%; }
     .footer .footer__row ul li {
       display: block;
-      margin: 5px 0px;
+      margin: 1px 0px;
       text-align: left; }
     .footer .footer__row a i {
       margin: 0% 2%; }
@@ -135,8 +135,6 @@ html section {
   .encabezado::after {
     display: block;
     content: "";
-    border-top: 40px solid #9DB8E7;
-    border-right: 100vw solid transparent;
     background-color: #d9dcf7; }
 
 .wrapper {
@@ -306,7 +304,7 @@ footer {
     padding: 2%; }
     .footer .footer__row ul li {
       display: block;
-      margin: 5px 0px;
+      margin: 1px 0px;
       text-align: left; }
     .footer .footer__row a i {
       margin: 0% 2%; }
