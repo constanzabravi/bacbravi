@@ -80,7 +80,7 @@ html main {
 
 html section {
   font-size: 1.3rem;
-  padding: 2em;
+  padding: 1.5em;
   background-color: #d9dcf7;
   font-family: 'Roboto', sans-serif; }
 
@@ -502,3 +502,7 @@ footer {
   z-index: 100; }
   .whatsapp-icon {
     margin-top: 13px; }
+
+@media screen and (max-width: 600px) {
+  .whatsapp {
+    display: none; } }
