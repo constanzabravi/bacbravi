@@ -30,7 +30,7 @@ html {
 // GRID
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-template-rows: auto;
     grid-template-areas:
         "header header header header"
@@ -76,6 +76,9 @@ font-size: 1rem !important;
         }
     }
 }
+body {
+    body { min-height: 100vh; }
+}
         section {
           padding: 1em;
           font-size: 0.9rem;
@@ -110,6 +113,15 @@ font-size: 1rem !important;
       padding: 30px;
     }
 
+// MEDIA QUERIES SECCION
+@media (max-width: 700px) {
+    .encabezado {
+       &::after {
+            border-top: 40px solid  map-get($colores, "encabezadoBorder");
+            border-right: 300px solid transparent;
+          }
+        }
+        }
     // SECCION 
  
 .card-text {
