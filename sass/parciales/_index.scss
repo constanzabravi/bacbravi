@@ -39,6 +39,9 @@
 .botonindex {
         font-family:'Oswald', sans-serif;
         font-size: 1.2rem;
+        &:hover {
+            color:white;
+        }
 }
 
 .colorwhite {
