@@ -193,22 +193,6 @@ body {
     }
 }
 
-.animacionFooter {
-    float: center;
-    -webkit-transition: margin 0.5s ease-out;
-    -moz-transition: margin 0.5s ease-out;
-    -o-transition: margin 0.5s ease-out;
-    transition: all 0.5s ease;
-    &:hover {
-        margin-top: 10px;
-    }
-}
-
-.animacionFooter {
-    &:hover {
-        transform: scale(1.1);
-    }
-}
 // Media queries de calendario de agenda tu entrevista 
 @media (max-width: 700px) {
     .calendly-inline-widget {
